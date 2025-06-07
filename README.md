@@ -1,11 +1,10 @@
-;***************************************************************************
-;* TRABALHO ASSEMBLY - ATMEGA2560                                          *
-;* Processamento de caracteres com tabela de referência.                   *
-;***************************************************************************
+;202402103253, Rodrigo de Sousa Ferrett, TA
+;202401000671, Gabriel Couto Barros , TA
+;202402717707, João Pedro Borges Souza Santana, TA
+;202403660059, Daniel de Jesus Teixeira, TA
+;202402705989, Lucas Alves Castela Pereira, TA
 
-;===========================================================================
-; DIRETIVAS E DEFINIÇÕES
-;===========================================================================
+
 .INCLUDE "m2560def.inc"
 
 ;-- Definição de registradores para melhor legibilidade
@@ -48,7 +47,7 @@ PHRASE_FLASH:
 ;===========================================================================
 .CSEG
 .ORG 0x0000
-    rjmp MAIN       ; Pula para o início do programa principal
+    rjmp MAIN ; Pula para o início do programa principal (Main)
 
 ;---------------------------------------------------------------------------
 ; ROTINA PRINCIPAL
@@ -188,4 +187,4 @@ COPY_FLASH_TO_RAM:
     dec temp
     rjmp COPY_FLASH_TO_RAM
 COPY_DONE:
-    ret
+    Ret
