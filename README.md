@@ -5,8 +5,6 @@
 ;202402705989, Lucas Alves Castela Pereira, TA
 
 
-.INCLUDE "m2560def.inc"
-
 ;-- Definição de registradores para melhor legibilidade
 .def temp           = r16  ; Registrador de uso geral
 .def temp2          = r17  ; Registrador de uso geral 2
